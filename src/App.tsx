@@ -34,6 +34,9 @@ function App() {
   return (
     <Router>
       <Switch>
+        <AuthRoute exact path="/">
+          <Account />
+        </AuthRoute>
         <Route path="/login">
           <Login />
         </Route>
